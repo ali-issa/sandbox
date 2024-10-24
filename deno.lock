@@ -2,6 +2,7 @@
   "version": "4",
   "specifiers": {
     "npm:@deno/vite-plugin@1": "1.0.0_vite@5.4.10",
+    "npm:@types/node@*": "22.5.4",
     "npm:@vitejs/plugin-react@^4.3.3": "4.3.3_vite@5.4.10_@babel+core@7.25.9",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
@@ -343,6 +344,12 @@
     "@types/estree@1.0.6": {
       "integrity": "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="
     },
+    "@types/node@22.5.4": {
+      "integrity": "sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==",
+      "dependencies": [
+        "undici-types"
+      ]
+    },
     "@vitejs/plugin-react@4.3.3_vite@5.4.10_@babel+core@7.25.9": {
       "integrity": "sha512-NooDe9GpHGqNns1i8XDERg0Vsg5SSYRhRxxyTGogUdkdNt47jal+fbuYi+Yfq6pzRCKXyoPcWisfxE6RIM3GKA==",
       "dependencies": [
@@ -546,6 +553,9 @@
         "has-flag"
       ]
     },
+    "undici-types@6.19.8": {
+      "integrity": "sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw=="
+    },
     "update-browserslist-db@1.1.1_browserslist@4.24.2": {
       "integrity": "sha512-R8UzCaa9Az+38REPiJ1tXlImTJXlVfgHZsglwBD/k6nj76ctsH1E3q4doGrukiLQd3sGQYu56r5+lo5r94l29A==",
       "dependencies": [
@@ -566,6 +576,14 @@
     "yallist@3.1.1": {
       "integrity": "sha512-a4UGQaWPH59mOXUYnAG2ewncQS4i4F43Tv3JoAM+s2VDAmS9NsK8GpDMLrCHPksFT7h3K6TOoUNn2pb7RoXx4g=="
     }
+  },
+  "redirects": {
+    "https://esm.sh/v128/@types/react@~18.2/jsx-runtime~.d.ts": "https://esm.sh/v128/@types/react@18.2.38/jsx-runtime~.d.ts"
+  },
+  "remote": {
+    "https://esm.sh/react@18.2.0/jsx-runtime": "aa011b336e339e6eaacc89787e7e3d6eb726b3701d9f8ac7fcd01db1595357cb",
+    "https://esm.sh/stable/react@18.2.0/denonext/jsx-runtime.js": "309faa58fa4e914707daffa1a9514bef4593c952f930640cf93bb871aab7ceb6",
+    "https://esm.sh/stable/react@18.2.0/denonext/react.mjs": "3c4f23bcfc53b256fcfaf6f834fa9f584c3bb7be667b2682c6cb6ba8ef88f8e6"
   },
   "workspace": {
     "dependencies": [
